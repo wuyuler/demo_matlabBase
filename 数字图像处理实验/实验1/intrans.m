@@ -44,13 +44,15 @@ case 'stretch'
    elseif length(varargin) == 3
       m = varargin{2};  
       E = varargin{3};
-   else error('Incorrect number of inputs for the stretch option.')
+   else
+       error('Incorrect number of inputs for the stretch option.')
    end
    g = 1./(1 + (m./(f + eps)).^E);
 otherwise
    error('Unknown enhancement method.')
 end
 % Convert to the class of the input image.
+%此函数将图象f转换成有参数newclass指定的类别，并输出图像g。newclass的有效值是'uint8'， 'uint16'， 和'double'。
 %g = changeclass(classin, g);
 
 
