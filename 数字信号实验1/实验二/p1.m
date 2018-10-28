@@ -1,11 +1,11 @@
 %分别使用conv和filter函数计算h和x的卷积y和y1，运行程序
 % Program P2_7
 clf;
-h = [3 2 1 -2 1 0 -4 0 3]; %impulse response
-x = [1 -2 3 -4 3 2 1]; %input sequence
+h = [3 2 1 -2 1 0 -4 0 3]; %h为单位冲激响应，指输入单位抽样序列时，LSI系统的输出序列（或称输出响应）
+x = [1 -2 3 -4 3 2 1]; %输入序列
 
 %使用conv求卷积,并使用stem画图
-y = conv(h,x);
+y = conv(h,x);%LSI系统的输出序列是输入序列与系统单位冲激响应的卷积和
 n = 0:14;%m+n-1
 subplot(2,1,1);
 stem(n,y);

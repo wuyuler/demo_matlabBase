@@ -1,5 +1,5 @@
 %直方图均衡 调用函数
-I=imread('lenna.bmp');
+I=imread('Test_ImageProcess2_moon.tif');
 J=histeq(I);
 subplot(2,2,1),imshow(I);title('原图');
 subplot(2,2,2),imhist(I,64);title('原图-直方图');

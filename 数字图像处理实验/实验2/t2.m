@@ -1,5 +1,5 @@
 %直方图规定化
-f = imread('lenna.bmp');
+f = imread('Test_ImageProcess2_moon.tif');
 p = twomodegauss(0.15,0.05, 0.75, 0.01,1, 0.07, 0.002);
 plot(p);
 g = histeq(f,p);

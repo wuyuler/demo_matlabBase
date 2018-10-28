@@ -1,3 +1,4 @@
+%用于直方图规定化的双高斯函数
 function p = twomodegauss(m1, sig1, m2, sig2, A1, A2, k) 
 
 c1 = A1 * (1 / ((2 * pi) ^ 0.5) * sig1);

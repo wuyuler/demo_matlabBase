@@ -7,7 +7,7 @@ x1=[1 zeros(1,20)]
 s1filter=filter(b2,a2,x1);
 subplot(3,1,1)
 stem(n,s1filter);
-title("系统2_单位冲激_filter");
+title("系统2单位冲激filter");
 xlabel('x');
 ylabel('y');
 
@@ -17,13 +17,17 @@ h=impz(b2,a2,11);
 s1conv=conv(h,x1);
 subplot(3,1,2)
 stem(n,s1conv,'filled')
-title("系统2_单位冲激_conv");
+title("系统2单位冲激conv");
+xlabel('x');
+ylabel('y');
 
 %使用impz函数
 s1impz=impz(b2,a2,21);
 subplot(3,1,3)
 stem(n,s1impz)
-title("系统1_单位冲激_impz");
+title("系统2单位冲激impz");
+xlabel('x');
+ylabel('y');
 
 
 %单位阶跃响应
@@ -33,7 +37,7 @@ s1filter=filter(b2,a2,x2);
 figure,
 subplot(3,1,1)
 stem(n,s1filter);
-title("系统1_阶跃响应_filter");
+title("系统2阶跃响应filter");
 xlabel('x');
 ylabel('y');
 %使用conv函数
@@ -43,11 +47,15 @@ s1conv=conv(h,x2);
 s1conv=s1conv(1:21);
 subplot(3,1,2)
 stem(n,s1conv,'filled')
-title("系统1_阶跃响应_conv");
+title("系统2阶跃响应conv");
+xlabel('x');
+ylabel('y');
 
 %使用impz函数
 b=[0,0.25,0.5,0.75,ones(1,17)];
 s1impz=impz(b,a2,21);
 subplot(3,1,3)
 stem(n,s1impz)
-title("系统1_阶跃响应_impz");
+title("系统2阶跃响应impz");
+xlabel('x');
+ylabel('y');

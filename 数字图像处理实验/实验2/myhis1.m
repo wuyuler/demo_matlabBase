@@ -1,7 +1,8 @@
-function f=a3()
-f=imread('anna.jpg')
-h=imhist(f)./numel(f);
-c=cumsum(h);
+%function f=myhis1(filename)
+f=imread('Test_ImageProcess2_moon.tif')
+myhist=imhist(f)
+h=imhist(f)./numel(f);%每个灰度级的像素个数除以总的像素个数
+c=cumsum(h);%求累积概率密度
 [row,col] = size(f);
 
 
