@@ -1,8 +1,8 @@
 
 %程序实分形
 list=[0 0]';
-resultX=zeros(1,50);
-resultY=zeros(1,50);
+resultX=zeros(1,50000);
+resultY=zeros(1,50000);
 i=1
 while i<=50000
     r=rand()
