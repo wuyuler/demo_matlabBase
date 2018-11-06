@@ -14,10 +14,11 @@ switch method
         %G2=intrans(A,'log',5,2);
         G21=mat2gray(A);
         G2=log(1+double(G21));
+        G2=im2uint8(G2);
          subplot(1,2,1)
         imshow(G2);
         subplot(1,2,2)
-        figure,imhist(G2)
+        imhist(G2)
     case 'gamma'
         %gamma±ä»»
         G3=intrans(A,'gamma',2);

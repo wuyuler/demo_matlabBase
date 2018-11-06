@@ -51,6 +51,7 @@ case 'stretch'
 otherwise
    error('Unknown enhancement method.')
 end
+g=im2uint8(g);
 % Convert to the class of the input image.
 %此函数将图象f转换成有参数newclass指定的类别，并输出图像g。newclass的有效值是'uint8'， 'uint16'， 和'double'。
 %g = changeclass(classin, g);
