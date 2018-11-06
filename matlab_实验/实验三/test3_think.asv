@@ -1,3 +1,0 @@
-a=getCircle([-2,0],1);
-plot(a())
-hold on 

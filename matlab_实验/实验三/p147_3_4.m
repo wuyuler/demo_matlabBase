@@ -14,7 +14,7 @@ xlabel('1600200010');
 ylabel('计科161');
 title('唐永金');
 %我们已知有4个交点,通过鼠标点击获取
-%jiaodian=ginput(4);
+jiaodian=ginput(4);
 hold on 
 plot(jiaodian(:,1),jiaodian(:,2),'ro');
 %plot(jiaodian,'ro');
