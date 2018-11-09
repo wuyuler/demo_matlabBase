@@ -6,13 +6,12 @@ surf(X0,Y0,Z0);
 x1=1:.1:5;
 [X1,Y1]=meshgrid(x1);
 Z1=interp2(X0,Y0,Z0,X1,Y1,'cubic');
+%图二
 subplot(122)
 colormap('hsv');
 %添加色柱。colorbar
-
 shading interp 
 %绘制15条等高线(hold , contour)
-
 surf(X1,Y1,Z1);
 colorbar;
 hold on;

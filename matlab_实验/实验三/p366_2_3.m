@@ -1,4 +1,4 @@
-x=linspace(-2*pi,2*pi,9);
+x=linspace(-2*pi,2*pi,20);
 y1=x.^2;
 y2=cos(2*x);
 y3=y1.*y2;

@@ -8,6 +8,7 @@ set(gca,'XTick',x);
 label={'-2\pi','','-\pi','','0','','\pi','','2\pi'};
 set(gca,'xTickLabel',label);
 plot(x,y1,'r',x,y2,'b-.',x,y3,'g--');
+axis([-2*pi,2*pi,-inf,inf]);
 legend('计科161','唐永金','1600200010')
 % xlabel('1600200010');
 % ylabel('计科161');

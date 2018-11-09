@@ -1,3 +1,5 @@
+clc
+clear
 x1=linspace(-5,0,100);
 x2=linspace(0,5,100);
 y1=(x1+pi^0.5)/exp(2);
