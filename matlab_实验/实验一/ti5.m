@@ -11,3 +11,34 @@ C=A*B
 %»ñÈ¡¾ØÕóÓÒÏÂ½Ç3*2×Ó¾ØÕó
 D=C(M-2:end,N-1:end)
 
+
+
+[m,n] =size(C)
+res=C(m-2:end,n-1:end)
+
+
+A=100:999;
+res=find(rem(A,21)==0)
+length(res)
+test='AjsidBudU'
+a=find(test>='A'&test<='Z')
+test(a)=[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

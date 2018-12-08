@@ -23,7 +23,7 @@ imshow(S3,[]);
 title('幅度谱(对数方式)')
 
 subplot(col,row,5);
-rev=ifft2(F);
+rev=ifft2(Fc);
 imshow(rev,[])
 title('幅度谱(傅里叶反变换)')
 
